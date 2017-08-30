@@ -3,19 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.itdhq.ajce</groupId>
     <artifactId>meta</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <dependencies>
-        <dependency>
-            <groupId>com.itdhq.ajce</groupId>
-            <artifactId>ajce-platform</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>org.alfresco</groupId>
-            <artifactId>alfresco-repository</artifactId>
-            <version>5.2.f</version>
-        </dependency>
-    </dependencies>
+    <version>0.2-SNAPSHOT</version>
     <name>AJCE Meta</name>
     <packaging>pom</packaging>
 
