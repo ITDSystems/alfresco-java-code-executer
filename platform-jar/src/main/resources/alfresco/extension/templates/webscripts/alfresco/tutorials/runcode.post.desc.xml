@@ -1,0 +1,6 @@
+<webscript>
+    <shortname>Runs arbitrary java code</shortname>
+    <description>Runs arbitrary java code</description>
+    <url>/api/ajce</url>
+    <authentication>admin</authentication>
+</webscript>

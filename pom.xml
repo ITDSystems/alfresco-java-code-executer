@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itdhq.ajce</groupId>
+    <artifactId>meta</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <dependencies>
+        <dependency>
+            <groupId>com.itdhq.ajce</groupId>
+            <artifactId>ajce-platform</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.alfresco</groupId>
+            <artifactId>alfresco-repository</artifactId>
+            <version>5.2.f</version>
+        </dependency>
+    </dependencies>
+    <name>AJCE Meta</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>platform-jar</module>
+        <module>maven-plugin</module>
+        <module>example-project</module>
+    </modules>
+</project>
