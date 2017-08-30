@@ -19,7 +19,7 @@
 	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans
           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	<bean id="webscript.alfresco.tutorials.runcode.post"
+	<bean id="webscript.com.itdhq.ajce.runcode.post"
 		  class="com.itdhq.ajce.ExecuteJavaCode"
 		  parent="webscript">
 		<property name="serviceRegistry" ref="ServiceRegistry"/>
