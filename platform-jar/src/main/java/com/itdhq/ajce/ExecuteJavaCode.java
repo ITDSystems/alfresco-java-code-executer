@@ -9,9 +9,7 @@ import org.springframework.extensions.webscripts.AbstractWebScript;
 import org.springframework.extensions.webscripts.WebScriptRequest;
 import org.springframework.extensions.webscripts.WebScriptResponse;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.Serializable;
+import java.io.*;
 
 
 public class ExecuteJavaCode extends AbstractWebScript {
@@ -46,7 +44,19 @@ public class ExecuteJavaCode extends AbstractWebScript {
             throw new AlfrescoRuntimeException("Failed to load class from byte-code", e);
         }
 
-        Serializable result = instance.run(serviceRegistry);
+        Serializable result;
+        try {
+            result = instance.run(serviceRegistry);
+            if (result == null)
+                result = "--- empty response ---";
+        } catch (Throwable e)
+        {
+            StringWriter writer = new StringWriter();
+            writer.write(String.format("Error occurred: %s\n\n", e.getMessage()));
+            e.printStackTrace(new PrintWriter(writer));
+            e.getCause()
+            result = writer.toString();
+        }
 
         ObjectOutputStream oos = new ObjectOutputStream(res.getOutputStream());
         oos.writeObject(result);
