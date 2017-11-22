@@ -7,6 +7,8 @@ AJCE is just a webscript that receives Java byte-code as a request payload, load
 Use-cases are similar to [JS Console](https://github.com/share-extras/js-console) ones but for pretty complex
 cases when required JS API is not available.
 
+**!!! Please keep in mind this extension is not supposed to be used in production environment**
+
 # Installation
 
 AJCE may be installed as a regular Alfresco JAR module. Keep in mind that it's disabled by default, thus
